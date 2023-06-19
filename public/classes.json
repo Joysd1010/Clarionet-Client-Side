@@ -1,0 +1,299 @@
+[
+  {
+    "class_name": "Piano Class",
+    "instrument_image": "https://cdn.mos.cms.futurecdn.net/PJMten63Ltd8cwKkNPLuzX.jpg",
+    "instructor_name": "John Smith",
+    "available_seats": 10,
+    "price": 350
+  },
+  {
+    "class_name": "Mandolin Class",
+    "instrument_image": "https://pbs.twimg.com/media/FSF8YyhX0AIVHk2.jpg:large",
+    "instructor_name": "John Smith",
+    "available_seats": 10,
+    "price": 350
+  },
+  {
+    "class_name": "Guitar Class",
+    "instrument_image": "https://guitar.com/wp-content/uploads/2023/03/Martin-SC-10E-Credit-Adam-Gasson-HERO@2000x1500.jpg",
+    "instructor_name": "John Smith",
+    "available_seats": 10,
+    "price": 300
+  },
+  {
+    "class_name": "Tabla Class",
+    "instrument_image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/504453/preview",
+    "instructor_name": "Ravi Shankar",
+    "available_seats": 8,
+    "price": 400
+  },
+  {
+    "class_name": "Banjo Class",
+    "instrument_image": "https://rohatgimusicandartgallery.com/assets/img/products/bulbul-tarang.jpg",
+    "instructor_name": "Ravi Shankar",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Tanpura Class",
+    "instrument_image": "https://5.imimg.com/data5/FY/BG/MY-41619764/miraj-tanpura-500x500.jpg",
+    "instructor_name": "Ravi Shankar",
+    "available_seats": 8,
+    "price": 350
+  },
+  {
+    "class_name": "Guitar Class",
+    "instrument_image": "https://cdn.shopify.com/s/files/1/0255/2712/4002/products/jzulmxlwuxnjjxqfj7kj_1600x.jpg?v=1572381273",
+    "instructor_name": "Daniel Thompson",
+    "available_seats": 5,
+    "price": 400
+  },
+  {
+    "class_name": "Electronic Guitar Class",
+    "instrument_image": "https://images.reverb.com/image/upload/s--v7rbGAgF--/t_card-square/v1652559291/zaqmjbwpfz2nbubaauhv.jpg",
+    "instructor_name": "Daniel Thompson",
+    "available_seats": 5,
+    "price": 400
+  },
+  {
+    "class_name": "Drum Class",
+    "instrument_image": "https://media.sweetwater.com/api/i/q-82__ha-0df1971403896ff5__hmac-b3929e188f77842f831e575fbd2ff8edd5874a3a/images/items/750/RS525SC-WR-large.jpg",
+    "instructor_name": "Daniel Thompson",
+    "available_seats": 5,
+    "price": 200
+  },
+  {
+    "class_name": "Saxophone Class",
+    "instrument_image": "https://cdn-hmamj.nitrocdn.com/IROKgAJlcxdIhKzMJAjsnthZRgWJSfNH/assets/images/optimized/rev-47d732d/wp-content/uploads/2020/08/SHAKTI-Alto-Clear-Lacquer-1-scaled.jpg",
+    "instructor_name": "Rahul Kapoor",
+    "available_seats": 6,
+    "price": 250
+  },
+  {
+    "class_name": "Clarinet Class",
+    "instrument_image": "https://phamoxmusic.com/wp-content/uploads/2020/03/Clarinet-PIC-001.jpg",
+    "instructor_name": "Rahul Kapoor",
+    "available_seats": 6,
+    "price": 250
+  },
+  {
+    "class_name": "Flute Class",
+    "instrument_image": "https://www.ubuy.com.my/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjMzYjY3OGMxZDRmMjExYzQ5NWE0ZTVhLXZpbnRhZ2Utc3R5bGUtYmFtYm9vLWZsdXRlLWNoaW5lc2UuanBn.jpg",
+    "instructor_name": "Rahul Kapoor",
+    "available_seats": 6,
+    "price": 250
+  },
+
+  {
+    "class_name": "Sitar Class",
+    "instrument_image": "https://www.atyutka.com/wp-content/uploads/2021/06/Sitar.jpg",
+    "instructor_name": "Anoushka Shankar",
+    "available_seats": 12,
+    "price": 350
+  },
+  {
+    "class_name": "Tanpura Class",
+    "instrument_image": "https://5.imimg.com/data5/DP/OD/GH/SELLER-78650/tanpura-cover-500x500.JPG",
+    "instructor_name": "Anoushka Shankar",
+    "available_seats": 12,
+    "price": 350
+  },
+  {
+    "class_name": "Drum Class",
+    "instrument_image": "https://i.pinimg.com/originals/1d/20/41/1d2041832e46bb514c71c5e80e977399.jpg",
+    "instructor_name": "Zakir Hussain",
+    "available_seats": 10,
+    "price": 350
+  },
+  {
+    "class_name": "Drum Class",
+    "instrument_image": "https://images-cdn.ubuy.co.in/633afeaef233af5c1006e5d7-drum-set-eastar-22-inch-for-adults-5.jpg",
+    "instructor_name": "Michael Anderson",
+    "available_seats": 10,
+    "price": 450
+  },
+  {
+    "class_name": "Saxophone Class",
+    "instrument_image": "https://musiekwereld.co.za/wp-content/uploads/2020/05/Jupitor-JAS500-Alto-Sax.jpg",
+    "instructor_name": "Michael Anderson",
+    "available_seats": 10,
+    "price": 450
+  },
+  {
+    "class_name": "Tabla Class",
+    "instrument_image": "https://dhata.in/wp-content/uploads/2022/06/1-1.jpg",
+    "instructor_name": "Zakir Hussain",
+    "available_seats": 10,
+    "price": 250
+  },
+  
+  {
+    "class_name": "Harmonium Class",
+    "instrument_image": "https://m.media-amazon.com/images/I/41holaWOS1L._AC_UF1000,1000_QL80_.jpg",
+    "instructor_name": "Zakir Hussain",
+    "available_seats": 10,
+    "price": 250
+  },
+  {
+    "class_name": "Dhol Class",
+    "instrument_image": "https://m.media-amazon.com/images/I/71QvikCrdbL.jpg",
+    "instructor_name": "Zakir Hussain",
+    "available_seats": 10,
+    "price": 250
+  },
+  {
+    "class_name": "Cello Class",
+    "instrument_image": "https://static.wikia.nocookie.net/arranging/images/4/4c/Cello.jpg/revision/latest?cb=20120329084245",
+    "instructor_name": "Angela Johnson",
+    "available_seats": 4,
+    "price": 500
+  },
+  {
+    "class_name": "Harmonica Class",
+    "instrument_image": "https://cdn.britannica.com/41/144041-050-C6B0D5E7/Harmonica.jpg",
+    "instructor_name": "Angela Johnson",
+    "available_seats": 4,
+    "price": 500
+  },
+  {
+    "class_name": "Guitar Class",
+    "instrument_image": "https://media.musicshop360.com/10880/img_2862_20210218124951.jpg",
+    "instructor_name": "Angela Johnson",
+    "available_seats": 4,
+    "price": 500
+  },
+  {
+    "class_name": "Ukulele Class",
+    "instrument_image": "https://blog.emediamusic.com/wp-content/uploads/2019/01/MUP-Ukulele-Angle_300dpi-RGB.jpg",
+    "instructor_name": "Angela Johnson",
+    "available_seats": 4,
+    "price": 500
+  },
+  {
+    "class_name": "Bansuri Class",
+    "instrument_image": "https://e1.pxfuel.com/desktop-wallpaper/617/282/desktop-wallpaper-bansuri.jpg",
+    "instructor_name": "Priya Patel",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Banjo Class",
+    "instrument_image": "https://rohatgimusicandartgallery.com/assets/img/products/bulbul-tarang.jpg",
+    "instructor_name": "Priya Patel",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Trumpet Class",
+    "instrument_image": "https://www.james-music.co.uk/cdn/shop/products/used_trumpet_1024x1024.jpg?v=1473854984",
+    "instructor_name": "Priya Patel",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Harp Class",
+    "instrument_image": "https://www.kaufmanmusiccenter.org/images/uploads/news/1LH-PRINCE-WILLIAM-CG-SPECIAL-INSTRUMENT-600x750.jpg",
+    "instructor_name": "Ustad Amjad Ali Khan",
+    "available_seats": 6,
+    "price": 450
+  },
+  {
+    "class_name": "Tabla Class",
+    "instrument_image": "https://i.etsystatic.com/20973239/r/il/fe3539/3899634852/il_fullxfull.3899634852_if9b.jpg",
+    "instructor_name": "Ustad Amjad Ali Khan",
+    "available_seats": 6,
+    "price": 450
+  },
+  {
+    "class_name": "Veena Class",
+    "instrument_image": "https://www.desiblitz.com/wp-content/uploads/2020/03/7-Different-Types-of-Veena-Instruments.jpg",
+    "instructor_name": "Ustad Amjad Ali Khan",
+    "available_seats": 10,
+    "price": 400
+  },
+  {
+    "class_name": "Bansuri Class",
+    "instrument_image": "https://e0.pxfuel.com/wallpapers/1017/724/desktop-wallpaper-kantiflutes-bansuri-bamboo-flute.jpg",
+    "instructor_name": "Rahul Kapoor",
+    "available_seats": 7,
+    "price": 300
+  },
+  {
+    "class_name": "Harmonium Class",
+    "instrument_image": "https://m.media-amazon.com/images/I/91xnf1-2foL._AC_SL1500_.jpg",
+    "instructor_name": "Anoushka Shankar",
+    "available_seats": 8,
+    "price": 350
+  },
+  {
+    "class_name": "Veena Class",
+    "instrument_image": "https://images.metmuseum.org/CRDImages/mi/original/DP-15104-001.jpg",
+    "instructor_name": "Anoushka Shankar",
+    "available_seats": 8,
+    "price": 350
+  },
+  {
+    "class_name": "Saxophone Class",
+    "instrument_image": "https://www.victorymusical.com/cdn/shop/products/IMG_20210116_110428_9a96e28a-71a3-4341-807b-70739bb5a17c.png?v=1666812362",
+    "instructor_name": "Zakir Hussain",
+    "available_seats": 5,
+    "price": 350
+  },
+  {
+    "class_name": "Clarinet Class",
+    "instrument_image": "https://phamoxmusic.com/wp-content/uploads/2020/03/Clarinet-PIC-001.jpg",
+    "instructor_name": "Emily Brown",
+    "available_seats": 6,
+    "price": 300
+  },
+  
+  {
+    "class_name": "Vaolin Class",
+    "instrument_image": "https://cdn.shopify.com/s/files/1/0574/4109/1749/products/20220720_183040_ad98d2a4-3fbf-4799-8140-a45b7ff3307e.jpg?v=1658402768&width=3000",
+    "instructor_name": "Emily Brown",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Ukulele Class",
+    "instrument_image": "https://static-01.daraz.com.bd/p/fc92612a9015cfd378ef89db36f61b00.jpg",
+    "instructor_name": "Emily Brown",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Piano Class",
+    "instrument_image": "https://www.skoove.com/blog/wp-content/uploads/2018/05/Hero-Image.png",
+    "instructor_name": "Emily Brown",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Tanpura Class",
+    "instrument_image": "https://i0.wp.com/musicyaari.com/wp-content/uploads/2021/05/tanpura-1.jpg?fit=600%2C489&ssl=1",
+    "instructor_name": "Sophia Das",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Veena Class",
+    "instrument_image": "https://cdn.shopify.com/s/files/1/0657/4466/6847/products/YY8A7996_2000x.jpg?v=1661602817",
+    "instructor_name": "Sophia Das",
+    "available_seats": 8,
+    "price": 300
+  },
+  {
+    "class_name": "Sitar Class",
+    "instrument_image": "https://m.media-amazon.com/images/I/61ppY8eVJWL.jpg",
+    "instructor_name": "Sophia Das",
+    "available_seats": 8,
+    "price": 400
+  },
+  {
+    "class_name": "Djembe Class",
+    "instrument_image": "https://ragtime.pl/userdata/public/gfx/102601/5141f8092701852b1b352ead3001523c.jpg",
+    "instructor_name": "Ravi Shankar",
+    "available_seats": 8,
+    "price": 400
+  }
+]

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+.divider::after {
+    background-color: rgb(107, 180, 198);
+  }
+.divider::before {
+    background-color: rgb(107, 180, 198);
+  }
