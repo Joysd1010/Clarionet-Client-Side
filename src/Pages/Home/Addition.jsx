@@ -5,8 +5,8 @@ import img3 from '../../../public/client-3.png'
 
 const Addition = () => {
     return (
-        <div>
-            <div className="flex justify-center my-5 bg-blue-300 p-4">
+        <div className=' py-5'>
+            <div className="flex justify-center  bg-blue-300 p-4">
                 <div className="flex flex-col justify-center items-center ">
                     <div className="text-white text-3xl font-medium">Our Successful Students</div>
                     <div className="flex flex-col md:flex-row max-w-7xl justify-center items-center ">

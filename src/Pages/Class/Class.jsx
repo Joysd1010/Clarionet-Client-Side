@@ -7,9 +7,9 @@ import ClassCard from './ClassCard';
 const Class = () => {
     const data=useLoaderData()
 const classes=data.filter(classobj=>classobj?.status!=='pending')
-console.log(classes)
+// console.log(classes)
     return (
-        <div className='my-10 mx-20'>
+        <div className='py-10 px-5 bg-white md:px-20'>
             <SectionTitle title={'Musical Classes For You'}/>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
       {classes.map((session) => (

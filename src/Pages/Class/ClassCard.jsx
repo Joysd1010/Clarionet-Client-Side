@@ -68,7 +68,7 @@ const ClassCard = ({ classs }) => {
   };
   
   return (
-    <div className={!available_seats==0?"bg-blue-200 rounded-tr-3xl rounded-bl-3xl":"bg-red-300 rounded-tr-3xl rounded-bl-3xl"}>
+    <div className={!available_seats==0?"bg-blue-300 border-2 border-blue-700 p-2 rounded-tr-3xl rounded-bl-3xl":"bg-red-300 rounded-tr-3xl rounded-bl-3xl"}>
       <div className="flex justify-around py-5">
         <img
           src={instrument_image}
