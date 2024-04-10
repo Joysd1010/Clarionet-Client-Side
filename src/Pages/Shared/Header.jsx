@@ -27,20 +27,18 @@ const Header = () => {
     setMenu(true);
   };
   return (
-    <div className="">
-      <nav className=" mx-5 md:mx-20 flex items-center py-3 md:py-3 justify-between ">
+    <>
+      <nav className="bg-white px-5 sticky top-0 z-50 text-black md:px-20 flex items-center py-3 md:py-3 justify-between ">
         <div className=" flex items-center">
-          <img
-            className=" rounded-3xl w-14 md:w-20"
-            src={img}
-            alt=""
-          />
+          <img className=" rounded-3xl w-14 md:w-20" src={img} alt="" />
           <h1 className="text-2xl md:text-5xl px-4 ">Clarionet</h1>
         </div>
         <div className="flex items-center">
           <div
-            className={`flex items-center flex-col gap-3 md:flex-row md:static absolute ${
-              menu ? "-top-80 right-16" : " right-16 bg-blue-200 md:bg-white px-1 py-2 rounded-lg top-10" 
+            className={`flex items-center z-30 flex-col gap-3 md:flex-row md:static absolute ${
+              menu
+                ? "-top-80 right-16"
+                : " right-16 bg-blue-200 md:bg-white px-1 py-2 rounded-lg top-10"
             } duration-500`}
           >
             <Nav menu={menu} />
@@ -54,29 +52,31 @@ const Header = () => {
                 </Link>
               </div>
             ) : (
-              <button onClick={logOut} className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-10">
+              <button
+                onClick={logOut}
+                className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-10"
+              >
                 {" "}
                 Sign Out
               </button>
             )}
-            <div className={`${user?"block":"hidden"}`}>
+            <div className={`${user ? "block" : "hidden"}`}>
               <div
-              className="tooltip  tooltip-primary"
-              data-tip={user?.displayName ||user?.email}
-            >
-              <div className="avatar">
-                <div className="w-12 md:w-14 md:ml-10  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              {
-                user?.photoURL? <img src={user?.photoURL}/>: <FaUserAlt/>
-                
-              }
-                 {console.log(user?.photoURL)}
-
+                className="tooltip  tooltip-primary"
+                data-tip={user?.displayName || user?.email}
+              >
+                <div className="avatar">
+                  <div className="w-12 md:w-14 md:ml-10  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    {user?.photoURL ? (
+                      <img src={user?.photoURL} />
+                    ) : (
+                      <FaUserAlt />
+                    )}
+                    {console.log(user?.photoURL)}
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
-            
           </div>
           <div className=" md:hidden ml-5">
             {menu ? (
@@ -91,7 +91,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 

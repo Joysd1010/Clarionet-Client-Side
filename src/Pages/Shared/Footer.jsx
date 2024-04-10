@@ -6,12 +6,12 @@ import { MdLocationOn } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-200 py-4">
-      <div className="container mx-2 md:mx-20">
+    <footer className="bg-blue-200 text-black py-4">
+      <div className="container px-2 md:px-20">
         <div className="grid grid-cols-1 md:grid-cols-4">
           <div className="w-full md:w-1/4 md:px-4">
-            <div className="mb-4">
-              <img src={img} className='w-36' />
+            <div className="">
+              <img src={img} className='md:w-full w-36' />
             </div>
             <div>
               <h2 className="font-bold text-2xl">Clarionet</h2>

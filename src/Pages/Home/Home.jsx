@@ -28,10 +28,10 @@ const Home = () => {
   console.log(popularClass)
 
   return (
-    <div className="md:mx-20">
+    <div className="md:px-20 bg-blue-50">
       <Slider />
       <SectionTitle title="Popular Classes" />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 px-5">
       {popularClass.map((session) => (
         
         <PopularClass key={session._id} classs={session} />
