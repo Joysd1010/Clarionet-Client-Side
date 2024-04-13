@@ -9,9 +9,9 @@ const ManageUser = () => {
   useTitle("All User");
   const token=localStorage.getItem('acces_token')
   // const { data: users = [], refetch } = useQuery(["users"], async () => {
-  //   const result = await fetch("http://localhost:5000/user");
+  //   const result = await fetch("https://clarionet-server-side.vercel.app/user");
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const result = await fetch("http://localhost:5000/user",{
+    const result = await fetch("https://clarionet-server-side.vercel.app/user",{
       headers:{
         authorization:`Bearer ${token}`
       }
@@ -19,7 +19,7 @@ const ManageUser = () => {
     return result.json();
   });
   const handleAdmin = (id,name) => {
-    fetch(`http://localhost:5000/users/admin/${id}`,{
+    fetch(`https://clarionet-server-side.vercel.app/users/admin/${id}`,{
         method:'PATCH',
         
     }).then(res=>res.json())
@@ -39,7 +39,7 @@ const ManageUser = () => {
     })
   };
   const handleInstruct = (id,name) => {
-    fetch(`http://localhost:5000/users/instructor/${id}`,{
+    fetch(`https://clarionet-server-side.vercel.app/users/instructor/${id}`,{
         method:'PATCH',
         
     }).then(res=>res.json())
@@ -69,7 +69,7 @@ const ManageUser = () => {
       confirmButtonText: 'Yes, delete it!'
   }).then((result) => {
       if (result.isConfirmed) {
-          fetch(`http://localhost:5000/users/${id}`, {
+          fetch(`https://clarionet-server-side.vercel.app/users/${id}`, {
               method: 'DELETE'
           })
               .then(res => res.json())

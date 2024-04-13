@@ -7,14 +7,14 @@ import { useNavigate } from 'react-router-dom';
 const ManageClass = () => {
 
     const { data: users = [], refetch } = useQuery(["users"], async () => {
-        const result = await fetch("http://localhost:5000/class");
+        const result = await fetch("https://clarionet-server-side.vercel.app/class");
         return result.json();
       });
 const [review,setReview]=useState('')
 const handleApprove=(data)=>{
     // console.log('get clicked',id)
 
-      fetch(`http://localhost:5000/classes/${data._id}`,{
+      fetch(`https://clarionet-server-side.vercel.app/classes/${data._id}`,{
         method:'PUT',
         headers:{'content-type':'application/json'},
         body:JSON.stringify({data})
@@ -40,7 +40,7 @@ const handleApprove=(data)=>{
 const handleDenied=(data)=>{
     // console.log('get clicked',id)
 
-      fetch(`http://localhost:5000/denied/${data._id}`,{
+      fetch(`https://clarionet-server-side.vercel.app/denied/${data._id}`,{
         method:'PUT',
         headers:{'content-type':'application/json'},
         body:JSON.stringify({data})

@@ -23,7 +23,7 @@ const PaymentForm = ({ price, cart }) => {
 
     console.log(updatedSeat)
     const updateSeat={updatedSeat}
-    fetch(`http://localhost:5000/class/${cart.classId}`, {
+    fetch(`https://clarionet-server-side.vercel.app/class/${cart.classId}`, {
       method: 'PATCH',
       headers: {
           'content-type': 'application/json'

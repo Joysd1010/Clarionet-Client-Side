@@ -16,7 +16,7 @@ const quote=form.feedback.value;
 // console.log(quote)
 setReview(quote)
 
-fetch(`http://localhost:5000/feedback/${classData._id}`,{
+fetch(`https://clarionet-server-side.vercel.app/feedback/${classData._id}`,{
     method:'PUT',
     headers:{'content-type':'application/json'},
     body:JSON.stringify({review})

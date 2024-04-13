@@ -47,12 +47,12 @@ const router = createBrowserRouter([
       {
         path: "/class",
         element: <Class />,
-        loader: () => fetch("http://localhost:5000/class"),
+        loader: () => fetch("https://clarionet-server-side.vercel.app/class"),
       },
       {
         path: "/instruct",
         element: <Instructors />,
-        loader: () => fetch("http://localhost:5000/instruct"),
+        loader: () => fetch("https://clarionet-server-side.vercel.app/instruct"),
       },
     ],
   },

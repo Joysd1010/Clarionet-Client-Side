@@ -33,7 +33,7 @@ console.log({imageHostingToken,imgHosthigUrl})
             const {class_name,instructor_name,available_seats,price}=data
             const newClass={class_name,email:user?.email,price: parseFloat(price),status,instrument_image,instructor_name,available_seats}
             console.log(newClass)
-            fetch('http://localhost:5000/classes',{
+            fetch('https://clarionet-server-side.vercel.app/classes',{
                 method:'POST',
                 headers: { "content-type": "application/json" },
                 body:JSON.stringify(newClass)

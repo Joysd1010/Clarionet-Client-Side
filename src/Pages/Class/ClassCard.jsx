@@ -42,7 +42,7 @@ const ClassCard = ({ classs }) => {
         instructor_name,
         class_name,
       };
-      fetch("http://localhost:5000/cart", {
+      fetch("https://clarionet-server-side.vercel.app/cart", {
         method: 'POST',
           headers: {
             'content-type': 'application/json'

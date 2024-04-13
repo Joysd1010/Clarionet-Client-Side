@@ -9,7 +9,7 @@ const PaymentHistory = () => {
   );
 
   useEffect(() => {
-    fetch("http://localhost:5000/paym")
+    fetch("https://clarionet-server-side.vercel.app/paym")
       .then((res) => res.json())
       .then((data) => {
         setPayment(data);

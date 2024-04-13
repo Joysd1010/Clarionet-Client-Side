@@ -11,13 +11,13 @@ const MuEnrolled = () => {
   );
 
   useEffect(() => {
-    fetch("http://localhost:5000/paym")
+    fetch("https://clarionet-server-side.vercel.app/paym")
       .then((res) => res.json())
       .then((data) => {
         setPayment(data);
       });
 
-    fetch("http://localhost:5000/class")
+    fetch("https://clarionet-server-side.vercel.app/class")
       .then((res) => res.json())
       .then((data) => {
         setClass(data);

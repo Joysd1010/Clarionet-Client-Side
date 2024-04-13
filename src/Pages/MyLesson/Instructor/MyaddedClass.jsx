@@ -6,7 +6,7 @@ const MyaddedClass = () => {
     const {user}=useAuth()
 const [myClass,setMyclass]=useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/class")
+        fetch("https://clarionet-server-side.vercel.app/class")
           .then((res) => res.json())
           .then((data) => {
             setMyclass(data.filter(classobj=>classobj?.email===user?.email));

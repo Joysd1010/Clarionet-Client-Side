@@ -35,7 +35,7 @@ const RegestrationForm = () => {
         
               updateUser(name, imageAddress).then(() => {
                 const user = { name: name, email: email };
-        fetch("http://localhost:5000/user", {
+        fetch("https://clarionet-server-side.vercel.app/user", {
           method: 'POST',
           headers: { "content-type": "application/json" },
           body: JSON.stringify(user),

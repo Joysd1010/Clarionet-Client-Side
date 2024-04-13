@@ -12,14 +12,14 @@ const Home = () => {
   const [popularClass, setClass] = useState([]);
 // const classes=data.filter(classobj=>classobj?.status!=='pending')
   useEffect(() => {
-    fetch("http://localhost:5000/instruct")
+    fetch("https://clarionet-server-side.vercel.app/instruct")
       .then((res) => res.json())
       .then((data) => {
         setInstructor(data.slice(0, 6));
       });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5000/class")
+    fetch("https://clarionet-server-side.vercel.app/class")
       .then((res) => res.json())
       .then((data) => {
         setClass(data.filter(classobj=>classobj?.status!=='pending').slice(0, 8));

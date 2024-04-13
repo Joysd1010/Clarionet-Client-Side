@@ -55,7 +55,7 @@ const Form = () => {
         navigate('/')
 
                 const user = { name: googleUser.displayName, email: googleUser.email };
-        fetch("http://localhost:5000/user", {
+        fetch("https://clarionet-server-side.vercel.app/user", {
           method: 'POST',
           headers: { "content-type": "application/json" },
           body: JSON.stringify(user),

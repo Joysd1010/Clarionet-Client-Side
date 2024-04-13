@@ -58,7 +58,7 @@ const AuthProvider = ({ children }) => {
 
 
       if(loggedUser){
-              axios.post('http://localhost:5000/jwt',{email:loggedUser?.email})
+              axios.post('https://clarionet-server-side.vercel.app/jwt',{email:loggedUser?.email})
               .then(data=>{
                 console.log(data.data.token)
                 localStorage.setItem('acces_token',data.data.token)
