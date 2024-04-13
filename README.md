@@ -1,6 +1,4 @@
-Got it! Here's the updated README with MongoDB instead of Firebase for the database:
 
-```markdown
 # Clarionet Client
 
 This is the client-side application for Clarionet. It is built using React and Vite, and it incorporates various libraries and tools for different functionalities.
