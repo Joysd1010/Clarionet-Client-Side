@@ -71,14 +71,14 @@ const handleNavigate=(data)=>{
 
 
     return (
-        <div>
+        <div className=' h-screen w-screen'>
              <SectionTitle title={`Manage classes`} />
       <div className="w-full">
         <div className="w-full overflow-x-auto bg-indigo-300 rounded-lg">
           <table className="table w-full">
             {/* head */}
             <thead>
-              <tr className="text-xl">
+              <tr className="text-xl text-black">
                 <th>#</th>
                 <th>Class Name</th>
                 <th>Price</th>

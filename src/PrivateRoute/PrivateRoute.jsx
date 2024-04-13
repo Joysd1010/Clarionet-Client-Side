@@ -7,9 +7,10 @@ import { Bars } from 'react-loader-spinner'
 const PrivateRoute = ({children}) => {
     const { user, loading } = useContext(AuthContext);
     const location=useLocation()
+    
 
     if(loading){
-        return <div className='flex justify-around'><Bars
+        return <div className='flex py-60 justify-around'><Bars
         height="80"
         width="80"
         color="#4fa94d"

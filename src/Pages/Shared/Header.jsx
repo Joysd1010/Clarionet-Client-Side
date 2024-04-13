@@ -28,7 +28,7 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="bg-white px-5 sticky top-0 z-50 text-black md:px-20 flex items-center py-3 md:py-3 justify-between ">
+      <nav className="bg-white px-5 sticky shadow-md shadow-blue-400 top-0 z-50 text-black md:px-20 flex items-center py-3 md:py-3 justify-between ">
         <div className=" flex items-center">
           <img className=" rounded-3xl w-14 md:w-20" src={img} alt="" />
           <h1 className="text-2xl md:text-5xl px-4 ">Clarionet</h1>
@@ -45,7 +45,7 @@ const Header = () => {
             {!user ? (
               <div>
                 <Link to={"/login"}>
-                  <button className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-10">
+                  <button className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-5">
                     {" "}
                     Sign in
                   </button>
@@ -54,7 +54,7 @@ const Header = () => {
             ) : (
               <button
                 onClick={logOut}
-                className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-10"
+                className="btn btn-info hover:bg-blue-500 hover:text-white text-yellow-50 md:ml-5"
               >
                 {" "}
                 Sign Out
@@ -66,13 +66,13 @@ const Header = () => {
                 data-tip={user?.displayName || user?.email}
               >
                 <div className="avatar">
-                  <div className="w-12 md:w-14 md:ml-10  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <div className="w-12 md:w-12 md:ml-5  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     {user?.photoURL ? (
                       <img src={user?.photoURL} />
                     ) : (
                       <FaUserAlt />
                     )}
-                    {console.log(user?.photoURL)}
+                    {/* {console.log(user?.photoURL)} */}
                   </div>
                 </div>
               </div>

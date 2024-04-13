@@ -52,7 +52,8 @@ const Form = () => {
         const googleUser = result.user;
         console.log(googleUser);
         
-              
+        navigate('/')
+
                 const user = { name: googleUser.displayName, email: googleUser.email };
         fetch("http://localhost:5000/user", {
           method: 'POST',
@@ -74,7 +75,7 @@ const Form = () => {
   };
   return (
     <div>
-      <div className="flex flex-col gap-2 bg-blue-600 w-96 px-10 py-5 rounded-xl">
+      <div className="flex flex-col gap-2 bg-blue-600 md:w-96 px-10 py-5 rounded-xl">
         <h1 className="text-3xl text-white mb-10 text-center">Login Here!!</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
           <label htmlFor="mail" className="text-xl text-white">
@@ -84,7 +85,7 @@ const Form = () => {
             type="email"
             id="mail"
             placeholder="Enter mail here"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered bg-white w-full max-w-xs"
             {...register("email", { required: true })}
           />
           {errors.email && <span>This field is required</span>}
@@ -95,14 +96,14 @@ const Form = () => {
             type="password"
             id="pass"
             placeholder="Enter your password"
-            className="input input-bordered w-full max-w-xs "
+            className="input input-bordered bg-white w-full max-w-xs "
             {...register("password", { required: true })}
           />
           {errors.password && <span>This field is required</span>}
           <input
             type="submit"
             value="Login"
-            className="input input-bordered w-full max-w-xs btn my-5 "
+            className="input input-bordered bg-pink-600 text-white w-full max-w-xs btn my-5 "
           />{" "}
         </form>
         <p className="text-xl text-white">{error}</p>
@@ -111,7 +112,7 @@ const Form = () => {
         </div>
         <button
           onClick={handleGoogleSignIn}
-          className=" flex gap-2 px-16 py-2 rounded-xl items-center text-xl bg-blue-100 "
+          className=" flex gap-2 px-16 py-2 rounded-xl items-center text-xl bg-green-600 border-2 text-white "
         >
           Continue with <FcGoogle size={25} />
         </button>

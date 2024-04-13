@@ -22,7 +22,7 @@ console.log(price)
 
 
     return (
-        <div>
+        <div className=' h-screen'>
             <SectionTitle title={'Make Payment To Enroll'}/>
             <Elements stripe={stripePromise}>
                 <PaymentForm cart={paymentClass} price={price}/>

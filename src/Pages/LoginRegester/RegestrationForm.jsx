@@ -66,7 +66,7 @@ const RegestrationForm = () => {
   return (
     <div>
       <div>
-        <div className="flex flex-col gap-2 bg-blue-500 w-96 px-10 py-5 rounded-xl">
+        <div className="flex flex-col gap-2 bg-blue-500 md:w-96 px-10 py-5 rounded-xl">
           <h1 className="text-3xl text-white mb-10 text-center">
             Sign Up Here!!
           </h1>
@@ -82,7 +82,7 @@ const RegestrationForm = () => {
               id="name"
               {...register("name", { required: true })}
               placeholder="Enter Your Name here"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered bg-white w-full max-w-xs"
             />
             {errors.name && (
               <span className=" text-red-500">*This field is required*</span>
@@ -94,7 +94,7 @@ const RegestrationForm = () => {
               type="email"
               id="mail"
               placeholder="Enter mail here"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered bg-white w-full max-w-xs"
               {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             />
             {errors.email && (
@@ -109,7 +109,7 @@ const RegestrationForm = () => {
               type="text"
               id="photo"
               placeholder="Enter mail here"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered bg-white w-full max-w-xs"
               {...register("imageAddress", { required: true })}
             />
             {errors.imageAddress && (
@@ -122,7 +122,7 @@ const RegestrationForm = () => {
               type="password"
               id="pass"
               placeholder="Enter your password"
-              className="input input-bordered w-full max-w-xs "
+              className="input input-bordered bg-white w-full max-w-xs "
               {...register("password", {
                 required: true,
                 minLength: 6,
@@ -141,7 +141,7 @@ const RegestrationForm = () => {
               type="password"
               id="confirm_pass"
               placeholder="Enter your confirm password"
-              className="input input-bordered w-full max-w-xs "
+              className="input input-bordered bg-white w-full max-w-xs "
               {...register("confirmPassword", {
                 required: true,
                 validate: (value) =>
@@ -154,7 +154,7 @@ const RegestrationForm = () => {
             <input
               type="submit"
               value="Register"
-              className="input input-bordered w-full max-w-xs btn my-5 "
+              className="input input-bordered bg-blue-700 text-white w-full max-w-xs btn my-5 "
             />{" "}
           </form>
 

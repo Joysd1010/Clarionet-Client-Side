@@ -1,4 +1,6 @@
 import React from "react";
+import { ImMenu } from "react-icons/im";
+
 import img from "./../../../public/Orange Black Illustrated School of Music Logo.png";
 import { NavLink, Outlet } from "react-router-dom";
 import {
@@ -24,57 +26,70 @@ const MyLesson = () => {
 
   const [cart] = useCart();
 
-  // const isAdmin = true;
-  // const isAdmin = false;
+  
   const [isAdmin] = useAdmin()
 
-  // console.log({isAdmin})
   const [isInstructor]=useInstructor()
-  // console.log({isInstructor})
 
   return (
     <>
-      <div className="drawer lg:drawer-open drawer-mobile">
+      <div className="drawer lg:drawer-open drawer-mobile text-black bg-white h-screen ">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="flex flex-col items-center justify-center drawer-content">
-          {/* Page content here */}
-
-          <Outlet></Outlet>
+        <div className="drawer-content flex flex-col items-center justify-center">
+          
+          <div className=" bg-blue-400 flex justify-between px-5 py-3 w-full md:hidden">
+          <div className=" flex items-center gap-5">
+            <img src={img} className=" w-14" alt="" />
+            <h1 className=" text-gray-700 font-bold text-3xl">Clarionet</h1>
+          </div>
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
+            className="btn bg-transparent border-none text-black drawer-button lg:hidden"
           >
-            Open Menu
+            <ImMenu size={30}/>
+
           </label>
+          </div>
+
+          <Outlet></Outlet>
+          
+
+
+
+
         </div>
 
-        <div className="drawer-side bg-blue-300">
-          <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="p-4 menu w-80">
+        <div className="drawer-side  ">
+        <label
+            htmlFor="my-drawer-2"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu p-4 w-62 min-h-full bg-cyan-200 text-base-content flex flex-col gap-5">
             {/* Sidebar content here */}
-            <li>
+            <li >
               <img src={img} className="w-40" />
             </li>
             {isAdmin ? (
               <>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson">
                     <FaHome></FaHome> Admin Home
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/manage">
                     {" "}
                     <FaList /> Manage Class
                   </NavLink>
                 </li>
                 
-                <li>
-                  <NavLink to="/">
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
+                  <NavLink to="">
                     <FaBook></FaBook> Manage Reservatioin(Coming soon)
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/allusers">
                     <FaUsers></FaUsers> All Users
                   </NavLink>
@@ -82,18 +97,18 @@ const MyLesson = () => {
               </>
             ) : isInstructor ? (
               <>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink>
                     <FaHome></FaHome> Instructor Home
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/addClass">
                     {" "}
                     <FaList /> Add Class
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/myadded">
                     {" "}
                     <FaList /> My classes
@@ -102,27 +117,23 @@ const MyLesson = () => {
               </>
             ) : (
               <>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson">
                     <FaHome></FaHome> User Home
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/enroll">
                     <FaCalendarAlt></FaCalendarAlt> My Enrolled Class
                   </NavLink>
                 </li>
-                <li>
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/history">
-                    <FaWallet></FaWallet> Payment History(coming soon)
+                    <FaWallet></FaWallet> Payment History
                   </NavLink>
                 </li>
-                {/* <li>
-                  <NavLink to="/myLesson/pay">
-                    <FaWallet></FaWallet> Checkout
-                  </NavLink>
-                </li> */}
-                <li>
+                
+                <li className="bg-slate-500 rounded-xl text-yellow-300">
                   <NavLink to="/myLesson/myselceted">
                     <FaShoppingCart></FaShoppingCart> My Class
                     <span className="badge inl badge-secondary">
@@ -134,17 +145,17 @@ const MyLesson = () => {
             )}
 
             <div className="divider"></div>
-            <li>
+            <li className="bg-slate-500 rounded-xl text-yellow-300">
               <NavLink to="/">
                 <FaHome></FaHome> Home
               </NavLink>{" "}
             </li>
-            <li>
+            <li className="bg-slate-500 rounded-xl text-yellow-300">
               <NavLink to="/class">
                 <MdClass></MdClass> Classes
               </NavLink>
             </li>
-            <li>
+            <li className="bg-slate-500 rounded-xl text-yellow-300">
               <NavLink to="/instruct">
                 {" "}
                 <FaCartPlus></FaCartPlus>Instructor

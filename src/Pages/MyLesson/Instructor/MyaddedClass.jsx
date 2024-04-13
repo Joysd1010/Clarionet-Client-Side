@@ -14,7 +14,7 @@ const [myClass,setMyclass]=useState([])
       }, []);
 console.log({myClass})
     return (
-        <div>
+        <div className=' h-screen'>
              <SectionTitle title={`My added classes`} />
       <div className="w-full">
         <div className="w-full overflow-x-auto bg-indigo-300 rounded-lg">
@@ -22,13 +22,12 @@ console.log({myClass})
             {/* head */}
             <thead>
               <tr className="text-xl">
-                <th>#</th>
-                <th>Class Name</th>
+                
+                <th> Name</th>
                 <th>Price</th>
                 <th>Status</th>
                 <th>Total Seat</th>
-                <th>Feedback</th>
-                <th>Enrolled</th>
+              
 
                 
               </tr>
@@ -36,13 +35,12 @@ console.log({myClass})
             <tbody className="">
               {myClass?.map((item, index) => (
                 <tr key={item._id}>
-                  <td className="">{index + 1}</td>
+                  
                   <td>{item.class_name}</td>
                   <td>{item.price}</td>
                   <td><div class="badge badge-warning">{item?.status==='pending'?item.status:'Apporved'}</div></td>
                   <td className="">{item.available_seats}</td>
-                  <td className="">{item.feedback?item.feedback:'feedback pending'}</td>
-                  <td className="">0</td>
+                  
                   
                 </tr>
               ))}

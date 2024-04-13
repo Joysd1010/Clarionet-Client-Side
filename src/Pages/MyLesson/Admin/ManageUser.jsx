@@ -69,11 +69,12 @@ const ManageUser = () => {
       confirmButtonText: 'Yes, delete it!'
   }).then((result) => {
       if (result.isConfirmed) {
-          fetch(`http://localhost:5000/cart/${id}`, {
+          fetch(`http://localhost:5000/users/${id}`, {
               method: 'DELETE'
           })
               .then(res => res.json())
               .then(data => {
+                console.log(data)
                   if (data.deletedCount > 0) {
                       refetch();
                       Swal.fire(
@@ -87,15 +88,15 @@ const ManageUser = () => {
   })
   };
   return (
-    <div>
+    <div  className=' h-screen w-screen'>
       <SectionTitle title={`Total users ${users.length}`} />
       <div className="w-full">
         <div className="w-full overflow-x-auto bg-indigo-300 rounded-lg">
           <table className="table w-full">
             {/* head */}
             <thead>
-              <tr className="text-xl">
-                <th>#</th>
+              <tr className="text-xl text-black">
+                <th>No.</th>
                 <th>User Name</th>
                 <th>User Email</th>
                 <th>Role</th>

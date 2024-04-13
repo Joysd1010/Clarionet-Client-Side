@@ -8,7 +8,7 @@ const Instructors = () => {
   useTitle('Instructors')
     const data=useLoaderData()
     return (
-        <div className='mx-20 my-10'>
+        <div className='px-5 md:px-20 bg-white py-10'>
             <SectionTitle title="Our Instructors"/>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
         {data.map((teacher) => (

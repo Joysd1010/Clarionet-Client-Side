@@ -25,7 +25,7 @@ const Home = () => {
         setClass(data.filter(classobj=>classobj?.status!=='pending').slice(0, 8));
       });
   }, []);
-  console.log(popularClass)
+  // console.log(popularClass)
 
   return (
     <div className="md:px-20 bg-blue-50">

@@ -59,7 +59,7 @@ console.log({imageHostingToken,imgHosthigUrl})
       });
   };
 
-  return (<div>
+  return (<div className=" h-screen">
     <SectionTitle title={'Add a musical Class'}/>
     <div className="p-10 bg-sky-600 rounded-xl">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
